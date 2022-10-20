@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <data-source>
+        <description>DataSource heroku</description>
+        <name>java:app/heroku</name>
+        <class-name>org.postgresql.ds.PGSimpleDataSource</class-name>
+        <server-name>ec2-54-160-200-167.compute-1.amazonaws.com</server-name>
+        <port-number>5432</port-number>
+        <database-name>df4cs7i11a8rt</database-name>
+        <user>oikocyfqyafmnp</user>
+        <password>05a8d37443673039e8f9ec3d8c541ddc26c14bc869e8e270ae1364144beea507</password>
+    </data-source>
+</web-app>
